@@ -32,8 +32,23 @@
             margin-bottom: 30px;
             color: #ccc;
         }
-        .download-btn, .social-btn {
+        .download-btn {
             background-color: red;
+            color: white;
+            padding: 15px 30px;
+            font-size: 20px;
+            text-decoration: none;
+            border-radius: 25px;
+            transition: 0.3s;
+            box-shadow: 0px 4px 10px rgba(255, 0, 0, 0.5);
+            margin-bottom: 20px;
+        }
+        .download-btn:hover {
+            background-color: darkred;
+            box-shadow: 0px 6px 15px rgba(255, 0, 0, 0.7);
+        }
+        .social-btn {
+            background-color: #333;
             color: white;
             padding: 15px 30px;
             font-size: 20px;
@@ -47,13 +62,6 @@
             gap: 10px;
             width: 220px;
             margin: 10px;
-        }
-        .download-btn:hover, .social-btn:hover {
-            background-color: darkred;
-            box-shadow: 0px 6px 15px rgba(255, 0, 0, 0.7);
-        }
-        .social-btn {
-            background-color: #333;
         }
         .social-btn:hover {
             background-color: #555;
@@ -117,6 +125,7 @@
             Delta Executor is one of the most popular Roblox exploits. Download Delta Executor X 2.0 for iOS without a computer.
         </div>
         
+        <!-- زر Direct Install في الأعلى داخل المربع -->
         <div class="download-btn" id="installBtn">
             Direct Install
         </div>
