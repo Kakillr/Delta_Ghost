@@ -48,6 +48,9 @@
             background-color: darkred;
             box-shadow: 0px 6px 15px rgba(255, 0, 0, 0.7);
         }
+        .hidden {
+            display: none;
+        }
         .social-btn {
             background-color: #333;
             color: white;
@@ -104,8 +107,14 @@
             Delta Executor is one of the most popular Roblox exploits. Download Delta Executor X 2.0 for iOS without a computer.
         </div>
         
-        <div class="download-btn" id="installBtn">
-            Direct Install
+        <!-- زر Delta Install -->
+        <div class="download-btn" id="deltaInstallBtn">
+            Delta Install
+        </div>
+
+        <!-- زر CODEX Install (مخفي) -->
+        <div class="download-btn hidden" id="codexInstallBtn" onclick="installApp('itms-services://?action=download-manifest&url=https://codex-ios.com/Install.plist')">
+            CODEX Install
         </div>
 
         <div class="social-links">
@@ -122,9 +131,12 @@
     </div>
 
     <script>
-        document.getElementById('installBtn').addEventListener('click', function() {
-            var installLink = "itms-services://?action=download-manifest&url=https://deltaios-executor.com/Install.plist";
-            window.location.href = installLink; 
+        function installApp(url) {
+            window.location.href = url;
+        }
+
+        document.getElementById('deltaInstallBtn').addEventListener('click', function() {
+            installApp("itms-services://?action=download-manifest&url=https://deltaios-executor.com/Install.plist");
         });
     </script>
 </body>
