@@ -48,24 +48,32 @@
             background-color: darkred;
             box-shadow: 0px 6px 15px rgba(255, 0, 0, 0.7);
         }
-        .features-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-            gap: 20px;
-            padding: 20px;
-            text-align: left;
+        .social-container {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin-top: 10px;
         }
-        .feature-card {
+        .social-btn {
             background-color: #444;
-            padding: 15px;
-            border-radius: 10px;
-            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
-        }
-        .feature-card h3 {
             color: white;
+            padding: 10px 20px;
+            font-size: 16px;
+            text-decoration: none;
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            transition: 0.3s;
+            width: 180px;
+            justify-content: center;
         }
-        .feature-card p {
-            color: #ccc;
+        .social-btn:hover {
+            background-color: #555;
+        }
+        .social-btn img {
+            width: 20px;
+            height: 20px;
         }
     </style>
 </head>
@@ -75,7 +83,7 @@
         <div class="description">
             Delta Executor is one of the most popular Roblox exploits. Download Delta Executor X 2.0 for iOS without a computer.
         </div>
-        
+
         <!-- زر Delta Install -->
         <div class="download-btn" id="deltaInstallBtn">
             Delta Install
@@ -86,41 +94,19 @@
             CODEX Install
         </div>
 
-        <div class="social-links">
+        <!-- أزرار السوشيال ميديا بتصميم جديد -->
+        <div class="social-container">
             <a class="social-btn" href="https://www.youtube.com/@Ka_KILLR" target="_blank">
                 <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/YouTube_social_white_square_%282017%29.svg/1024px-YouTube_social_white_square_%282017%29.svg.png" alt="YouTube">
-                قناة اليوتيوب
+                يوتيوب
             </a>
 
             <a class="social-btn" href="https://t.me/KA_KILLR" target="_blank">
                 <img src="https://upload.wikimedia.org/wikipedia/commons/8/82/Telegram_logo.svg" alt="Telegram">
-                تليجرام
+                تيليجرام
             </a>
         </div>
     </div>
-
-    <!-- قسم Why Choose Delta iOS -->
-    <section class="content-section">
-        <h2>Why Choose Delta iOS?</h2>
-        <div class="features-grid">
-            <div class="feature-card">
-                <h3>Secure Installation</h3>
-                <p>Our platform uses advanced encryption and security measures to ensure safe app installation every time.</p>
-            </div>
-            <div class="feature-card">
-                <h3>Regular Updates</h3>
-                <p>Stay current with automatic updates and continuous improvements to your favorite apps.</p>
-            </div>
-            <div class="feature-card">
-                <h3>Wide Compatibility</h3>
-                <p>Support for various iOS versions and devices, ensuring broad accessibility.</p>
-            </div>
-            <div class="feature-card">
-                <h3>Fast Download Speeds</h3>
-                <p>Optimized servers ensure quick and reliable downloads for all users.</p>
-            </div>
-        </div>
-    </section>
 
     <script>
         function installApp(url) {
