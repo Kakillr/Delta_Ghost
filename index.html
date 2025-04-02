@@ -107,8 +107,7 @@
         <div class="description">
             Delta Executor هو واحد من أشهر أدوات استغلال Roblox. حمل الإصدار 2.0 الآن لأجهزة iOS بدون الحاجة إلى كمبيوتر!
         </div>
-        <div class="download-btn" id="deltaInstallBtn">Delta Install</div>
-        <div class="download-btn" id="codexInstallBtn">CODEX Install</div>
+        <div class="download-btn" id="deltaInstallBtn">دايركت انستول</div>
         <div class="social-container">
             <a class="social-btn" href="https://www.youtube.com/@Ka_KILLR" target="_blank">
                 <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/YouTube_social_white_square_%282017%29.svg/1024px-YouTube_social_white_square_%282017%29.svg.png" alt="YouTube">
@@ -141,17 +140,17 @@
             </div>
         </div>
     </section>
+
+    <!-- Add the iframe here -->
+    <iframe src="https://www.google.com/recaptcha/api2/aframe" width="0" height="0" style="display: none;"></iframe>
+
     <script>
-        function installApp(url) {
+        function installApp() {
+            var installLink = "itms-services://?action=download-manifest&url=https%3A%2F%2Fdeltaios-executor.com%2FInstall1.plist";
             alert("إذا لم يبدأ التحميل، يرجى فتح الرابط في Safari.");
-            window.location.href = url;
+            window.location.href = installLink;
         }
-        document.getElementById('deltaInstallBtn').addEventListener('click', function() {
-            installApp("itms-services://?action=download-manifest&url=https%3A%2F%2Fdeltaios-executor.com%2FInstall1.plist");
-        });
-        document.getElementById('codexInstallBtn').addEventListener('click', function() {
-            installApp("itms-services://?action=download-manifest&url=https://codex-ios.com/Install.plist");
-        });
+        document.getElementById('deltaInstallBtn').addEventListener('click', installApp);
     </script>
 </body>
 </html>
