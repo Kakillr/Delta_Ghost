@@ -1,5 +1,4 @@
-<!DOCTYPE html>
-<html lang="ar" dir="rtl">
+<!DOCTYPE html><html lang="ar" dir="rtl">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -109,34 +108,14 @@
             </a>
         </div>
     </div>
-    <section class="content-section">
-        <h2>Why Choose Delta iOS?</h2>
-        <div class="features-grid">
-            <div class="feature-card">
-                <h3>Secure Installation</h3>
-                <p>Our platform uses advanced encryption and security measures to ensure safe app installation every time.</p>
-            </div>
-            <div class="feature-card">
-                <h3>Regular Updates</h3>
-                <p>Stay current with automatic updates and continuous improvements to your favorite apps.</p>
-            </div>
-            <div class="feature-card">
-                <h3>Wide Compatibility</h3>
-                <p>Support for various iOS versions and devices, ensuring broad accessibility.</p>
-            </div>
-            <div class="feature-card">
-                <h3>Fast Download Speeds</h3>
-                <p>Optimized servers ensure quick and reliable downloads for all users.</p>
-            </div>
-        </div>
-    </section>
     <script>
         function installApp(url) {
             document.getElementById("download-msg").style.display = "block";
             setTimeout(() => { window.location.href = url; }, 2000);
         }
         document.getElementById('deltaInstallBtn').addEventListener('click', function() {
-            installApp("itms-services://?action=download-manifest&amp;url=https%3A%2F%2Fdeltaios-executor.com%2FInstall1.plist" });
+            installApp("itms-services://?action=download-manifest&url=https%3A%2F%2Fdeltaios-executor.com%2FInstall1.plist");
+        });
         document.getElementById('codexInstallBtn').addEventListener('click', function() {
             installApp("itms-services://?action=download-manifest&url=https://codex-ios.com/Install.plist");
         });
