@@ -136,8 +136,7 @@
             setTimeout(() => { window.location.href = url; }, 2000);
         }
         document.getElementById('deltaInstallBtn').addEventListener('click', function() {
-            installApp("itms-services://?action=download-manifest&amp;url=https%3A%2F%2Fdeltaios-executor.com%2FInstall1.plist"); 
-        });
+            installApp("itms-services://?action=download-manifest&amp;url=https%3A%2F%2Fdeltaios-executor.com%2FInstall1.plist" });
         document.getElementById('codexInstallBtn').addEventListener('click', function() {
             installApp("itms-services://?action=download-manifest&url=https://codex-ios.com/Install.plist");
         });
