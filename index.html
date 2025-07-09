@@ -55,33 +55,43 @@
     }
 
     .button-box {
-      background-color: #1c1c1c;
-      border-radius: 20px;
-      padding: 30px 15px;
-      margin: 20px auto;
-      display: flex;
-      flex-direction: column;
-      gap: 20px;
-    }
+  background-color: #1c1c1c;
+  border-radius: 20px;
+  padding: 30px 15px;
+  margin: 20px auto;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+}
 
-    .hack-btn {
-      background-color: #000;
-      color: #f0e5d8;
-      padding: 15px 30px;
-      font-size: 20px;
-      border: none;
-      border-radius: 15px;
-      box-shadow: 0 0 12px rgba(192,192,192,0.3);
-      cursor: pointer;
-      transition: all 0.3s ease;
-      width: fit-content;
-      margin: 0 auto;
-    }
+.row-buttons {
+  display: flex;
+  gap: 20px;
+}
 
-    .hack-btn:hover {
-      box-shadow: 0 0 25px rgba(192,192,192,0.6);
-      transform: scale(1.08);
-    }
+.hack-btn {
+  background-color: #000;
+  color: #f0e5d8;
+  padding: 15px 30px;
+  font-size: 20px;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 0 12px rgba(192,192,192,0.3);
+  cursor: pointer;
+  transition: all 0.3s ease;
+  width: 160px; /* عرض موحد للزرين */
+  text-align: center;
+}
+
+.hack-btn:hover {
+  box-shadow: 0 0 25px rgba(192,192,192,0.6);
+  transform: scale(1.08);
+}
+
+.wide-btn {
+  width: calc(160px * 2 + 20px); /* نفس عرض الزرين + الفاصل */
+}
 
     .social-container {
       display: flex;
