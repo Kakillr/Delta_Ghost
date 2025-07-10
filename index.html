@@ -54,7 +54,7 @@
       transform: scale(1.05);
     }
 
-    .button-box {
+.button-box {
   background-color: #1c1c1c;
   border-radius: 20px;
   padding: 30px 15px;
@@ -73,14 +73,14 @@
 .hack-btn {
   background-color: #000;
   color: #f0e5d8;
-  padding: 15px 30px;
+  padding: 15px 0;
   font-size: 20px;
   border: none;
   border-radius: 15px;
   box-shadow: 0 0 12px rgba(192,192,192,0.3);
   cursor: pointer;
   transition: all 0.3s ease;
-  width: 160px; /* عرض موحد للزرين */
+  width: 160px;
   text-align: center;
 }
 
@@ -90,7 +90,7 @@
 }
 
 .wide-btn {
-  width: calc(160px * 2 + 20px); /* نفس عرض الزرين + الفاصل */
+  width: 340px; /* = 160 + 160 + 20px gap */
 }
 
     .social-container {
@@ -136,20 +136,22 @@
     <button class="lang-btn" onclick="setLanguage('en')">English</button>
     <button class="lang-btn" onclick="setLanguage('zh')">中文</button>
   </div>
+<div id="mainContent" style="display:none;">
+  <div class="container">
+    <h1 id="mainTitle">𝐆𝐇𝐎𝐒𝐓 𝐊𝐈𝐋𝐋𝐑</h1>
+    <p id="mainDesc">اختار احسن هاك برأيك ولا تنسى تشترك بقناة اليوتيوب</p>
 
-  <div id="mainContent" style="display:none;">
-    <div class="container">
-      <h1 id="mainTitle">𝐆𝐇𝐎𝐒𝐓 𝐊𝐈𝐋𝐋𝐑</h1>
-      <p id="mainDesc">اختار احسن هاك برأيك ولا تنسى تشترك بقناة اليوتيوب</p>
+    <div class="button-box">
+      <div class="row-buttons">
+        <button class="hack-btn" onclick="installApp('itms-services://?action=download-manifest&amp;url=https%3A%2F%2Fdeltaios-executor.com%2FInstall2.plist')">Delta</button>
 
-<div class="button-box">
-  <button class="hack-btn" onclick="installApp('itms-services://?action=download-manifest&amp;url=https%3A%2F%2Fdeltaios-executor.com%2FInstall2.plist')">Delta</button>
+        <button class="hack-btn" onclick="installApp('itms-services://?action=download-manifest&amp;url=https%3A%2F%2Fkrnl-ios.com%2FInstall2.plist')">KRNL</button>
+      </div>
 
-  <button class="hack-btn" onclick="installApp('itms-services://?action=download-manifest&amp;url=https%3A%2F%2Fkrnl-ios.com%2FInstall2.plist')">KRNL</button>
-
-  <button class="hack-btn" onclick="installApp('itms-services://?action=download-manifest&amp;url=https%3A%2F%2Fcodex-ios.com%2FInstall.plist')">CODEX</button>
+      <button class="hack-btn wide-btn" onclick="installApp('itms-services://?action=download-manifest&amp;url=https%3A%2F%2Fcodex-ios.com%2FInstall.plist')">CODEX</button>
+    </div>
+  </div>
 </div>
-
 
       <div class="social-container">
         <p id="socialText">تابعنا على قنواتنا!</p>
